@@ -1,0 +1,73 @@
+body{
+    margin: 0%;
+    background: url(imagenes/Fondo_juego.PNG) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    
+}
+
+header {
+    background: black;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, .4);
+    display: flex;
+    gap: 20px;
+}
+
+#ahorcado {
+    width: 300px;
+}
+
+#palabra {
+    height: 3em;
+}
+
+#juego {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px 5px;
+}
+
+#palabra span {
+    width: 30px;
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 2px solid black;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 2em;
+}
+
+#letras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+#letras button {
+    padding: 10px 0;
+    width: 30px;
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+#formulario {
+    margin-top: 30px;
+    justify-content: center;
+}
