@@ -112,7 +112,7 @@ function click_letras( event ){
         game_over();
 
     }else if( cantidad_aciertos == palabra_adivinar.length ){
-        id('resultado_juego').innerHTML = "Te salvaste de la horca";
+        id('resultado_juego').innerHTML = "¡Te salvaste de la horca!";
         game_over();
     }
 

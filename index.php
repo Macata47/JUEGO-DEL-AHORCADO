@@ -17,6 +17,7 @@
     <div>
         <p id="palabra">   
             <?php
+            
             // Imprime los spans para cada letra de la palabra a adivinar
             if (!empty($palabra_adivinar)) {
                 for ($i = 0; $i < strlen($palabra_adivinar); $i++) {
@@ -32,7 +33,7 @@
 
         <div id="letras">
             <?php
-            // Imprime los botones de letras usando PHP
+            
             for ($i = ord('a'); $i <= ord('z'); $i++) {
                 $letra = chr($i);
                 echo '<button onclick="clickLetras(\'' . $letra . '\')">' . $letra . '</button>';
@@ -40,16 +41,20 @@
             ?>
         </div>
 
-        <div id="formulario">
-            <form action="procesar_palabra.php" method="POST">
-                <h3>Añade una palabra al juego</h3>
-                <label for="palabra"></label>
-                <input type="text" id="palabra" name="palabra" required>
-                <br>
-                <input type="submit" value="Enviar Palabra">
-            </form>
+        <div>  
+
+        <form action="palabras.php" method="POST">
+        <h3>Añade una palabra al juego</h3>
+        <label for="palabra">Tu palabra es:</label>
+        <input type="text" id="palabra" name="palabra" required>
+        <br><br>
+        <input type="submit" value="Lanzar Palabra">
+        </form>
+
         </div>
+
     </div>
+
 </main>
 
 <script src="juego.js"></script>   
